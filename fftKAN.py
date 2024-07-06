@@ -14,13 +14,13 @@ class NaiveFourierKANLayer(th.nn.Module):
         self.addbias = addbias
         self.inputdim = inputdim
         self.outdim = outdim
-        
+
         # With smooth_initialization, fourier coefficients are attenuated by the square of their frequency.
         # This makes KAN's scalar functions smooth at initialization.
         # Without smooth_initialization, high gridsizes will lead to high-frequency scalar functions,
         # with high derivatives and low correlation between similar inputs.
         grid_norm_factor = (th.arange(gridsize) + 1)**2 if smooth_initialization else np.sqrt(gridsize)
-        
+
         #The normalization has been chosen so that if given inputs where each coordinate is of unit variance,
         #then each coordinates of the output is of unit variance 
         #independently of the various sizes
