@@ -273,16 +273,16 @@ $$
 B_i,n : i \text{ is the knot index and } n \text{ is the degree}
 $$
 
-$$\begin{align}
-B_{i,0}(t) &:= \begin{cases}
+$$\displaylines{
+B_{i,0}(t) := \begin{cases}
 1 & \text{if } t_i \le t \lt t_{i+1} \\
 0 & \text{otherwise}
 \end{cases} \\
-
-B_{i,p}(t) &=
+B_{i,p}(t) =
   \frac{t - t_i}{t_{i+p} - t_i}B_{i,p-1}(t)+
   \frac{t_{i+p+1} - t}{t_{i+p+1} - t_{i+1}}B_{i+1,p-1}(t)
-\end{align}$$
+}$$
+
 ([Wikipedia][5])
 
 ```python
