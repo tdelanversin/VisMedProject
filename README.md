@@ -1,6 +1,7 @@
 # Exploring Komolgorov-Arnold Network applications in image classification tasks
 
-Tilman de Lanversin - [tilmand](tilmand@g.ecc.u-tokyo.ac.jp)  
+Tilman de Lanversin - [tilmand](tilmand@g.ecc.u-tokyo.ac.jp)
+Project GitHub page - [GitHub](https://github.com/tdelanversin/VisMedProject)
 ETH MSc student in Computer Science, Major in Visual and Interactive Computing  
 Exchange student at the University of Tokyo in Creative Informatics
 
